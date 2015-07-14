@@ -1,5 +1,0 @@
-package com.example.readingsensor;
-
-public class LineGraphView extends MainActivity {
-
-}
