@@ -41,6 +41,7 @@ public class ThermostatController implements SensorEventListener{
             //    currentMode = null; // self transition
             //}
             break;
+
         case Device.AirCond:
             if(deviceOn) {  // Cool On (sub)state
                 if(userModeChoice == null){
@@ -52,6 +53,7 @@ public class ThermostatController implements SensorEventListener{
                     Thermostat.turnOff(Device.AirCond);
                     deviceOn = false;
                 }
+
                 // optional code, self transition
                 /*
                 else if(ambTemp > refTemp) {
@@ -59,6 +61,8 @@ public class ThermostatController implements SensorEventListener{
                     deviceOn = true;
                 }
                 */
+
+
             } else {    // Cool Off
                 if(userModeChoice == null){   // switch to System Off
                     currentMode = null;
@@ -79,6 +83,7 @@ public class ThermostatController implements SensorEventListener{
                 */
             }
             break;
+
         case Device.Heater:
             if(deviceOn) {  // Heat On (sub)state
                 if(userModeChoice == null) {  // switch system off
@@ -209,9 +214,7 @@ public class ThermostatController implements SensorEventListener{
                     currentMode = Device.AirCond;
                 } else if(userModeChoice == Device.Heater) {
                     currentMode = Device.Heater;
-                } else {
-                    // do nothing
-                }
+                } 
                 break;
             case Device.AirCond:    // Cooling
                 if(userModeChoice == null) {  // Switch system to off
