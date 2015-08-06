@@ -4,6 +4,14 @@ Use when:
 2. to have flexibility in creating many different kinds of similar classes without having lots of duplicate code. 
 */
 
+
+
+
+/*3 parts:
+◦A FactoryClass is responsible for determining which particular object to create, and to create it
+◦A common Interfacedefines the kinds of objects that this Factory can create
+◦A set of Classeswhich implementthe Interface, in turn the Factory will create objects of these classes
+*/
 // Step 1 Create an interface.
 public interface Shape {
    void draw();
