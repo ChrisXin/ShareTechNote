@@ -15,6 +15,10 @@ We save (memoize) computed answers for possible later reuse, rather than re-comp
 
 From the very top, we break the problem into sub-problems
 
+(In solving optimization problems, the top-down approach may require repeatedly obtaining optimal solutions for the same sub-problem.)
+
 ### Bottom-up Approach
 
 Solve smaller problems and use these to build a solution for the problem
+
+
