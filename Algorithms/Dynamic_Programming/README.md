@@ -6,7 +6,7 @@
 2. Overlapping subproblems
 
 
-### memoization
+### Memoization
 To avoid calculating values multiple times, store intermediate calculations in a Hash table/Array.
 
 We save (memoize) computed answers for possible later reuse, rather than re-computing the answer multiple times
@@ -15,6 +15,6 @@ We save (memoize) computed answers for possible later reuse, rather than re-comp
 
 From the very top, we break the problem into sub-problems
 
-### bottom-up Approach
+### Bottom-up Approach
 
 Solve smaller problems and use these to build a solution for the problem
