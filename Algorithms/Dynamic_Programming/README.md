@@ -21,4 +21,8 @@ From the very top, we break the problem into sub-problems
 
 Solve smaller problems and use these to build a solution for the problem
 
+### Compare with Divide-and-Conquer
 
+Dynamic programming is distinct from divide-and-conquer, as the divide-and-conquer approach works well if the sub-problems are essentially unique (Storing intermediate results would only waste memory)
+
+If sub-problems re-occur, the problem is said to have overlapping sub-problems
